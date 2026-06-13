@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FruitFun</title>
+
+<style>
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:linear-gradient(to right,#0d6efd,#28a745);
+    color:white;
+}
+
+header{
+    text-align:center;
+    padding:20px;
+    background:rgba(0,0,0,0.2);
+}
+
+h1{
+    font-size:50px;
+    margin:0;
+    font-weight:bold;
+}
+
+nav{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    background:#0066cc;
+}
+
+nav button{
+    padding:12px;
+    border:none;
+    background:#0066cc;
+    color:white;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+nav button:hover{
+    background:#28a745;
+}
+
+.tab{
+    display:none;
+    padding:20px;
+}
+
+.active{
+    display:block;
+}
+
+img{
+    width:300px;
+    max-width:100%;
+    border-radius:10px;
+}
+
+.quiz{
+    background:rgba(255,255,255,0.15);
+    padding:15px;
+    border-radius:10px;
+    margin-top:20px;
+}
+
+.home-gallery img{
+    width:220px;
+    margin:10px;
+}
+
+.bottom-links{
+    margin-top:40px;
+    background:rgba(0,0,0,0.2);
+    padding:20px;
+    border-radius:10px;
+}
+
+input{
+    padding:10px;
+    margin:5px;
+    width:250px;
+}
+
+button.login{
+    background:#28a745;
+    color:white;
+    padding:10px 20px;
+    border:none;
+}
+</style>
+
+<script>
+function openTab(tabName){
+    var tabs=document.getElementsByClassName("tab");
+    for(var i=0;i<tabs.length;i++){
+        tabs[i].style.display="none";
+    }
+    document.getElementById(tabName).style.display="block";
+}
+</script>
+
+</head>
+<body>
+
+<header>
+<h1>FRUITFUN</h1>
+</header>
+
+<nav>
+<button onclick="openTab('home')">Home</button>
+<button onclick="openTab('apple')">Apple</button>
+<button onclick="openTab('banana')">Banana</button>
+<button onclick="openTab('mango')">Mango</button>
+<button onclick="openTab('orange')">Orange</button>
+<button onclick="openTab('grapes')">Grapes</button>
+<button onclick="openTab('pineapple')">Pineapple</button>
+<button onclick="openTab('watermelon')">Watermelon</button>
+<button onclick="openTab('strawberry')">Strawberry</button>
+<button onclick="openTab('kiwi')">Kiwi</button>
+</nav>
+
+<!-- HOME -->
+<div id="home" class="tab active">
+
+<h2>Welcome to FruitFun!</h2>
+
+<div class="home-gallery">
+<img src="https://images.unsplash.com/photo-1567306226416-28f0efdc88ce">
+<img src="https://images.unsplash.com/photo-1574226516831-e1dff420e37f">
+<img src="https://images.unsplash.com/photo-1550258987-190a2d41a8ba">
+<img src="https://images.unsplash.com/photo-1587393855524-087f83d95acb">
+</div>
+
+<h2>What are Fruits?</h2>
+
+<p>
+Fruits are the edible parts of flowering plants that contain seeds.
+They come in many colors, shapes and flavors. Fruits are naturally
+sweet and packed with important nutrients.
+</p>
+
+<h2>Why Do We Eat Fruits?</h2>
+
+<p>
+We eat fruits because they provide vitamins, minerals, fiber and water.
+They help us stay healthy, energetic and hydrated.
+</p>
+
+<h2>Why Are Fruits Important?</h2>
+
+<p>
+Fruits support healthy growth, improve digestion, strengthen immunity,
+promote healthy skin and reduce the risk of many diseases.
+Eating a variety of fruits every day helps maintain a balanced diet.
+</p>
+
+<div class="bottom-links">
+
+<h2>FAQ</h2>
+
+<p><b>Q:</b> How many fruits should I eat daily?</p>
+<p><b>A:</b> 2–4 servings are generally recommended.</p>
+
+<p><b>Q:</b> Which fruit contains Vitamin C?</p>
+<p><b>A:</b> Oranges, kiwi and strawberries are rich in Vitamin C.</p>
+
+<p><b>Q:</b> Are fruits healthy snacks?</p>
+<p><b>A:</b> Yes, fruits are nutritious and naturally sweet.</p>
+
+<hr>
+
+<h2>Customer Helpline</h2>
+
+<p>📞 1800-FRUITFUN</p>
+<p>📧 support@fruitfun.com</p>
+
+<hr>
+
+<h2>Login</h2>
+
+<input type="text" placeholder="Username"><br>
+<input type="password" placeholder="Password"><br>
+<button class="login">Login</button>
+
+</div>
+
+</div>
+
+<!-- APPLE -->
+<div id="apple" class="tab">
+<h2>Apple</h2>
+<img src="https://images.unsplash.com/photo-1567306226416-28f0efdc88ce">
+<p>
+Apples are one of the most popular fruits in the world.
+They are rich in fiber, Vitamin C and antioxidants.
+Apples support heart health, digestion and overall wellness.
+</p>
+
+<div class="quiz">
+<h3>Quiz</h3>
+<p>Which vitamin is commonly found in apples?</p>
+<input type="radio"> Vitamin C<br>
+<input type="radio"> Vitamin D
+</div>
+</div>
+
+<!-- BANANA -->
+<div id="banana" class="tab">
+<h2>Banana</h2>
+<img src="https://images.unsplash.com/photo-1574226516831-e1dff420e37f">
+<p>
+Bananas are rich in potassium and carbohydrates.
+They provide quick energy and support muscle and nerve function.
+</p>
+
+<div class="quiz">
+<h3>Quiz</h3>
+<p>Bananas are rich in?</p>
+<input type="radio"> Potassium<br>
+<input type="radio"> Iron
+</div>
+</div>
+
+<!-- MANGO -->
+<div id="mango" class="tab">
+<h2>Mango</h2>
+<img src="https://images.unsplash.com/photo-1553279768-865429fa0078">
+<p>
+Mangoes are known as the king of fruits.
+They are rich in Vitamin A and Vitamin C and have a delicious sweet taste.
+</p>
+
+<div class="quiz">
+<h3>Quiz</h3>
+<p>Mango is often called?</p>
+<input type="radio"> King of Fruits<br>
+<input type="radio"> Queen of Fruits
+</div>
+</div>
+
+<!-- ORANGE -->
+<div id="orange" class="tab">
+<h2>Orange</h2>
+<img src="https://images.unsplash.com/photo-1547514701-42782101795e">
+<p>
+Oranges are famous for their high Vitamin C content and immune-boosting properties.
+</p>
+
+<div class="quiz">
+<h3>Quiz</h3>
+<p>Oranges are rich in?</p>
+<input type="radio"> Vitamin C<br>
+<input type="radio"> Vitamin K
+</div>
+</div>
+
+<!-- GRAPES -->
+<div id="grapes" class="tab">
+<h2>Grapes</h2>
+<img src="https://images.unsplash.com/photo-1515778767554-5b302f67b42e">
+<p>
+Grapes contain antioxidants that help protect body cells and support heart health.
+</p>
+
+<div class="quiz">
+<h3>Quiz</h3>
+<p>Grapes contain many?</p>
+<input type="radio"> Antioxidants<br>
+<input type="radio"> Fats
+</div>
+</div>
+
+<!-- PINEAPPLE -->
+<div id="pineapple" class="tab">
+<h2>Pineapple</h2>
+<img src="https://images.unsplash.com/photo-1550258987-190a2d41a8ba">
+<p>
+Pineapples contain bromelain, an enzyme that helps digestion.
+</p>
+
+<div class="quiz">
+<h3>Quiz</h3>
+<p>Pineapple helps?</p>
+<input type="radio"> Digestion<br>
+<input type="radio"> Sleep
+</div>
+</div>
+
+<!-- WATERMELON -->
+<div id="watermelon" class="tab">
+<h2>Watermelon</h2>
+<img src="https://images.unsplash.com/photo-1589984662646-e7b2e4962f18">
+<p>
+Watermelon contains lots of water and helps keep the body hydrated.
+</p>
+
+<div class="quiz">
+<h3>Quiz</h3>
+<p>Watermelon helps with?</p>
+<input type="radio"> Hydration<br>
+<input type="radio"> Hearing
+</div>
+</div>
+
+<!-- STRAWBERRY -->
+<div id="strawberry" class="tab">
+<h2>Strawberry</h2>
+<img src="https://images.unsplash.com/photo-1464965911861-746a04b4bca6">
+<p>
+Strawberries are rich in antioxidants and Vitamin C.
+</p>
+
+<div class="quiz">
+<h3>Quiz</h3>
+<p>Strawberries contain?</p>
+<input type="radio"> Vitamin C<br>
+<input type="radio"> Vitamin D
+</div>
+</div>
+
+<!-- KIWI -->
+<div id="kiwi" class="tab">
+<h2>Kiwi</h2>
+<img src="https://images.unsplash.com/photo-1619566636858-adf3ef46400b">
+<p>
+Kiwi is a nutrient-rich fruit containing Vitamin C, Vitamin K and fiber.
+</p>
+
+<div class="quiz">
+<h3>Quiz</h3>
+<p>Kiwi is rich in?</p>
+<input type="radio"> Vitamin C<br>
+<input type="radio"> Vitamin B12
+</div>
+</div>
+
+</body>
+</html>
